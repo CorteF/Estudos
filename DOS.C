@@ -10,8 +10,8 @@ int main(void) {
     struct sockaddr_in alvo;
 
     alvo.sin_family = AF_INET;
-    alvo.sin_port = htons(PORTA);
-    alvo.sin_addr.s_addr = inet_addr("IP");
+    alvo.sin_port = htons(PORTA); //Alterar para Porta Alvo
+    alvo.sin_addr.s_addr = inet_addr("IP"); //Alterar para IP Alvo
 
     while (1) { // Loop infinito
         meusocket = socket(AF_INET, SOCK_STREAM, 0);
